@@ -1,0 +1,11 @@
+
+
+<ul>
+	<% for video in videos %>
+		<li>
+			<h3><%= video.title %></h3>
+			<iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+			<p><%= video.description %></p>
+		</li>
+	<% end %>
+</ul>

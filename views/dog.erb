@@ -1,0 +1,20 @@
+
+<div class="row-fluid">
+  <div class="span4 offset4">
+
+    <div class="media">
+    <% if dog.photo.length > 0 %>
+      <img src="<%= dog.photo %>" alt="<%= dog.name %>'s photo" class="media-object pull-left img-polaroid">
+    <% end %>
+      <div class="media-body">
+        <h2 class="media-heading"><%= dog.name %></h2>
+        <time>Was born on <strong><%= dog.created_at %></strong></time>
+        <p>Is a <strong><%= dog.breed.name %></strong></p>
+        <p><a class="btn btn-danger" href="/dog/delete/<%= dog.id %>">Delete</a></p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
